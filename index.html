@@ -4,14 +4,30 @@
 	 <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<title>Mentor Page</title>
-    <script>   
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"/>
+  <title>Mentor Page</title>
+    <!-- <script>   
         function formOpen() {   
         window.open("form.html");  
         }   
-    </script> 
+    </script>  -->
 </head>
 <body>
+
+	<div class="navbar">
+        <div class="nav-right" >
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#prgms">Programs</a></li>
+            <li><a href="#test">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <img src="img/TT logo.png" width="200px" height="80px">
+        </div>  
+    </div>
+
     <header id="home">
         <div class="content-wrap">
             <h1><b>JOIN THE MENTORSHIP, BE THE EXPERT</b></h1>
@@ -21,13 +37,13 @@
 
     
 
-<div class="prgrms">
-    <h1 style="padding-top: 30px;">Our Programs</h1>
+<div class="prgrms" id="prgms">
+    <h5 class="text-center" style="color:black; font-size: 26px; padding-top: 40px; padding-bottom: 20px;"><b>OUR PROGRAMS</b></h5>
     <div class="card-deck m-5">
         <div class="card border-dark mb-5">
           <img class="card-img-top" src="img/web.jpg" alt="Web Development">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Web Development</h5>
+            <h4 class="card-title">Web Development</h4>
             <p class="card-text" style="font-size: 14px;">Web development is the building and maintenance of websites; it’s the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience</p>
             <button type="button" class="button btn-primary mt-auto" onclick="formOpen()">Apply Now</button>
           </div>
@@ -35,7 +51,7 @@
         <div class="card border-dark mb-5">
           <img class="card-img-top" src="img/app.jpg" alt="App Development">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">App Development</h5>
+            <h4 class="card-title">App Development</h4>
             <p class="card-text" style="font-size: 14px;">Mobile app development is the act or process by which a mobile app is developed for mobile devices. These applications can be pre-installed on phones as web applications using server-side or client-side processing to provide an "application-like" experience within a Web browser.</p>
           <button type="button" class="button btn-primary mt-auto" onclick="formOpen()">Apply Now</button>
           </div>
@@ -43,15 +59,15 @@
         <div class="card border-dark mb-5">
           <img class="card-img-top" src="img/Graphic.jpg" alt="Graphic Design">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Graphic Design</h5>
+            <h4 class="card-title">Graphic Design</h4>
             <p class="card-text" style="font-size: 14px;">Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy, page layout techniques and pictures to meet users’ specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.</p>
             <button type="button" class="button btn-primary mt-auto" onclick="formOpen()">Apply Now</button>
           </div>
         </div>
         <div class="card border-dark mb-5">
-          <img class="card-img-top" src="img/softskills.jpg" alt="Soft Skills and personality Development">
+          <img class="card-img-top" src="img/softskills.jpg"  height="130px" alt="Soft Skills and personality Development">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Soft Skills </h5>
+            <h4 class="card-title">Soft Skills </h4>
             <p class="card-text" style="font-size: 14px;"> The soft skills training provides strong practical orientation to the students and helps them in building and improving their skills in communication, the effective use of English, presentations, leadership, group discussions, interviews, and inter-personal skills.</p>
             <button type="button" class="button btn-primary mt-auto" onclick="formOpen()">Apply Now</button>
           </div>
@@ -59,9 +75,64 @@
       </div>
 </div>
 
+  <div class="for">
+  		 <h5 class="text-center" style="color:black; font-size: 26px; padding-bottom: 20px;"><b>TO JOIN AS A MENTOR</b></h5>
+    <div class="formbody">
+     
+      <form class="m-5">
+        <div class="form-group row">
+          <label for="name" class="col-sm-2 col-form-label" style="color:black; font-weight: 600;">Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+          </div>
+          </div>
+        <div class="form-group row">
+        <label for="mail" class="col-sm-2 col-form-label" style="color:black; font-weight: 600;">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        </div>
+        <div class="form-group row">
+          <label for="phone" class="col-sm-2 col-form-label" style="color:black; font-weight: 600;">Mobile</label>
+          <div class="col-sm-10">
+            <input type="phone" class="form-control" id="phone" placeholder="Mobile Number">
+          </div>
+          </div>
+        <div class="form-group row">
+        <label for="college" class="col-sm-2 col-form-label" style="color:black; font-weight: 600;">College Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="college" placeholder="College Name">
+        </div>
+        </div>
+        <div class="form-group row">
+        <label for="year" class="col-sm-2 col-form-label" style="color:black; font-weight: 600;">Year Of Graduation</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="year" placeholder="Year Of Graduation">
+        </div>
+        </div>
+         <div class="form-group row">
+        <label for="domain" class="col-sm-2 col-form-label" style="color:black; font-weight: 600;">Domain Of Expertise</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="domain" placeholder="Domain Of Expertise">
+        </div>
+        </div>
+       <div class="form-group row">
+        <label for="work" class="col-sm-2 col-form-label" style="color:black; font-weight: 600;">Share Some of Your work</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="work" placeholder="Share Some of Your work"></textarea>
+        </div>
+        </div>  
+    </form>
+       <div class="text-center">
+          <button type="submit" class="btn btn-dark align-center">Submit</button>
+      </div>
+    </div>
+  </div>
 
-  <div class="test">
-    <h1 style="padding-top: 20px;">Testimonials</h1>
+
+
+  <div class="test" id="test">
+     <h5 class="text-center" style="color:black; font-size: 26px; padding-top:50px; padding-bottom: 20px;"><b>TESTIMONIALS</b></h5>
     <div class="card-deck m-5">
         <div class="card " style="padding: 40px;">
           <img class="card-img-top" src="img/p3.jfif" width="20px" height="180px" >
@@ -71,7 +142,7 @@
           </div>
         </div>
         <div class="card" style="padding: 40px;">
-          <img class="card-img-top" src="img/p2.jfif" width="20px" height="180px">
+          <img class="card-img-top" src="img/p2.jfif" width="40px" height="190px">
           <div class="card-body d-flex flex-column">
             <p class="card-text">"I have learned a lot from being a mentor as well as a student in techtable. A lot more to learn here!"</p>
             <p >           -- chris</p>
@@ -87,11 +158,13 @@
         
       </div>
   </div>
+
+
 </body>
 
-  <footer  style="background-color:black; text-align: center; color: white;"  >
-    <h2 style="padding: 30px;">Contact Us</h2>
-        <a href="www.facebook.com" class="fa fa-facebook"></a>
+  <footer   id="contact" style="background-color: black">
+    <!-- <h2 style="padding: 30px;">Contact Us</h2> -->
+        <!-- <a href="www.facebook.com" class="fa fa-facebook"></a>
         <a href="www.twitter.com" class="fa fa-twitter"></a>
         <a href="www.github.com" class="fa fa-github"></a>
         <a href="www.linkedin.com" class="fa fa-linkedin"></a>
@@ -101,7 +174,76 @@
     <div class="text-center p-3" style="background-color:black">
       © 2021 Copyright:
       <a class="text-white" href="https://mdbootstrap.com/">Techtable.com</a>
-    </div>
+    </div> -->
+     <h5 class="text-center" style="color:white; font-size: 26px; padding-top: 30px; padding-bottom: 20px;"><b>CONTACT</b></h5>
+ 
+    <!-- <div class="row " id="head">
+            <h1 class="col-md-7 inline-block " style="color: white">Contact</h1>
+            <div class=" text-centre ">
+                <img src="img/TT logo.png" alt="TechTable logo" width="200px" height="100px" class="logo float-right m-5 text-right">
+            </div>
+        </div> -->
+
+        <div class="con">
+            <!-- <div class="container col-sm-2"> -->
+            <!-- <div class="row"> -->
+              <div class="p1 col-md-3 col-sm-10">
+                <p><img src="img/whatsapp.png" width="40px" height="40px" style="border-radius: 10px;"> <a href="#whatsapp"> Whatsapp Group</a></p>      
+                    
+                <p><img src="img/linkedin.png" width="40px" height="40px"> <a href="#linkedin"> Linkedin Page</a></p>      
+                                                
+                <p><img src="img/youtube.png" width="40px" height="40px" style="border-radius: 10px;"> <a href="#youtube" > Youtube Channel</a></p>      
+                    
+              </div>
+              <div class="p2 col-md-3 col-sm-10">
+
+                <p><img src="img/facebook.png" width="40px" height="40px"><a href="facebook"> Facebook Page</a></p>    
+                 
+                <p ><img src="img/instagram.png" width="40px" height="40px"><a href="instagram"> Instagram Page</a></p> 
+                
+                <p><img src="img/telegram.png" width="40px" height="40px" style="border-radius: 10px;"><a href="telegram"> Telegram Group</a></p>      
+              </div>
+              
+              <!-- <div class=" p3" id="end"> -->
+
+                <!-- <div class="end"> -->
+                    <!-- <div id="verticle-line" > -->
+                      
+                      <!--   <div class="text">
+                            <h1>Location</h1>
+                    <p>Nirmaan&nbsp;IITM,&nbsp;Chennai&nbsp;600036</p>
+                    <br>
+                    <h1>Email&nbsp;Address</h1>
+                    <p>admin@techtable.co.in</p>
+                    <br>
+                    <h1>Mobile&nbsp;Number</h1>
+                    <p>9940332489</p>
+                        </div> -->
+                    
+                    <!-- </div> -->
+                <!-- </div> -->
+                <div class="p4 col-md-3 col-sm-10">
+                  <div id="verticle-line" >
+                  <h1>Location</h1>
+                  <p>Nirmaan&nbsp;IITM,&nbsp;Chennai&nbsp;600036</p>
+                    <br>
+                    <h1>Email&nbsp;Address</h1>
+                    <p>admin@techtable.co.in</p>
+                    <br>
+                    <h1>Mobile&nbsp;Number</h1>
+                    <p>9940332489</p>
+                </div>
+                </div>
+
+
+              <!-- </div> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        </div>
+        <!-- <div class="text-center p-3" style="background-color:black; font-size: 14px;">
+      
+      <a class="text-white" href="https://mdbootstrap.com/">© 2021 Copyright: Techtable.co.in</a>
+    </div> -->
   </footer>
 </html>
 

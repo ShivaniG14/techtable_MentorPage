@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+
   }
   
   body {
@@ -17,13 +18,91 @@ html {
    background-size: cover;
   }
 
+  /* navbar */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 0px !important;
+  padding-right: 40px;
+  overflow: hidden;
+  background-color: #009FB7;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+}
+
+.navbar .nav-right {
+  float: right;
+}
+
+.navbar .nav-right img{
+  margin-left: 650px;
+  /* float: right; */
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+li a:hover {
+  background-color: white;
+  color: #2f3061;
+}
+
+/* .active {
+    color:  lightblue;
+    padding-bottom: 8px;
+    border-bottom-style: solid ;
+    border-bottom-width: 2px;
+    width: fit-content;
+    font-weight: 550;
+  } */
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+    overflow: hidden;
+    background-color: #009FB7;
+    top: 0;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .navbar .nav-right img{
+    margin-left: 10px;
+    width: 100px;
+    height: 50px;
+    /* float: right; */
+  }
+}
+
   #home{
-      height: 660px;
+      height: 640px;
       background-image: url(img/head.jpg);
       background-size: cover;
+
   }
 
-   #home h1 {
+   #home .content-wrap h1 {
       padding-top: 200px;
     font-size: 40px;
     line-height: 1;
@@ -32,7 +111,7 @@ html {
     color: white;
   }
   
- #home h2 {
+ #home .content-wrap h2 {
     font-size: 35px;
     position: relative;
     font-family: calibri;
@@ -121,37 +200,15 @@ html {
     
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C5F9D7", endColorstr="#F7D486", GradientType=1 );
   }
-  html{
-    background-color: black;
-  }
-  body .for{
-    background-color: black;
-     }
-  .formbody
-  {
-      margin: 10px;
-      padding:10px;
-      border-radius: 20px;
-      background: hsla(40, 94%, 74%, 1);
 
-background: linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
-
-background: -moz-linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FBD07C", endColorstr="#F7F779", GradientType=1 );
-      
-  }
-  
   @media only screen and (max-width: 650) {
-    #home h1 {
+    #home .content-wrap h1 {
       padding-top: 200px;
-    font-size: 16px;
+    font-size: 14px;
   }
   
-  #home h2 {
-    font-size: 14px;
+  #home .content-wrap h2 {
+    font-size: 12px !important;
   
   }
 
@@ -160,21 +217,94 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FBD07C", en
   @media only screen and (max-width: 900px) {
   #home .content-wrap h1 {
       padding-top: 200px;
-     font-size: 22px;
+     font-size: 16px;
      background-size: cover;
   }
   
   #home .content-wrap h2 {
-    font-size: 18px;
+    font-size: 14px;
   
+   }
   }
+  
+
+  .for{
+      background: hsla(132, 79%, 68%, 1);
+
+      background: linear-gradient(90deg, hsla(132, 79%, 68%, 1) 0%, hsla(101, 62%, 48%, 1) 100%);
+
+      background: -moz-linear-gradient(90deg, hsla(132, 79%, 68%, 1) 0%, hsla(101, 62%, 48%, 1) 100%);
+
+      background: -webkit-linear-gradient(90deg, hsla(132, 79%, 68%, 1) 0%, hsla(101, 62%, 48%, 1) 100%);
+
+      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6EEE87", endColorstr="#5FC52E", GradientType=1 );
+          padding: 50px;
+     }
+
+  .for .formbody
+  {
+      margin: 20px;
+      padding:10px;
+      border-radius: 20px;
+      background-color: white;
+      font-size: 13px;
+  }
+  .for .formbody input, #work {
+    font-size: 12px;
+  }
+
+  .formbody input:focus, #work:focus {
+    border: 2px solid #5fc52e;
+  }
+
+  .formbody button{
+    font-size: 12px;
+  }
+
+  .formbody button:hover{
+    background-color: white;
+    color: black;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body .for{
+       padding: 20px;
+    }
+
+    .formbody
+      {
+          margin: 0px;
+          padding: 5px;
+          font-size: 12px;
+      }
+  }
+
+  @media only screen and (max-width: 900px) {
+     body .for{
+       padding: 20px !important;
+    }
+
+    .formbody
+      {
+          margin: 0px;
+          padding: 5px;
+          font-size: 12px;
+      }
+  }
+
   
   .prgrms h1{
     font-size: 30px;
+    font-style: bold;
   }
 
   .test h1{
     font-size: 30px;
+    font-style: bold;
+  }
+
+  .test .card .card-text, p{
+    font-size: 12px;
   }
 
   .button{
@@ -182,6 +312,26 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FBD07C", en
   }
 
   }
+
+    @media only screen and (max-width: 600px) {
+      .test .card-deck{
+        margin: 0px !important;
+      }
+
+      .test .card-deck .card{
+        padding: 25px !important;
+      }
+    }
+
+    @media only screen and (max-width: 900px) {
+      .test .card-deck{
+        margin: 0px !important;
+      }
+
+      .test .card-deck .card{
+        padding: 25px !important;
+      }
+    }
 
 
   .fa {
@@ -226,3 +376,213 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FBD07C", en
   background: #125688;
   color: white;
 }
+
+
+/*----footer---*/
+/*footer{
+     max-width: 100%;
+    overflow: hidden;
+}*/
+footer{
+  padding: 20px;
+}
+
+footer h1{
+  font-size: 30px;
+    font-style: bold;
+}
+footer #head{
+  margin-right: 0px;
+}
+
+footer #head > h1 {
+    color:  #1b12a0 ;  
+    /*margin-left: 10px; */
+    font-size: 30px; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 50px;
+    
+}
+footer .con{
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  /*margin: 30px;*/
+  /*margin-left: 140px;*/
+}
+
+footer .col-md-3, .col-md-4{
+    margin-top: 30px;
+}
+
+
+footer .col-md-3 > p > a{
+    padding: 5px;
+    font-size: 16px;
+    /*font-weight: bold;*/
+    color: white;
+}    
+footer .col-md-4 > p > a{
+    padding: 5px;
+    font-size: 16px;
+    /*font-weight: bold;*/
+    color: white;
+}    
+        
+footer .p4 #verticle-line {
+    width: 2px;
+    height: 210px;
+    /*margin-right: : 20px;*/
+    background: rgb(8, 101, 240);
+  }
+
+  footer .p4{
+    text-align: left;
+    justify-content: left;
+  }
+
+footer .p4 #verticle-line h1{
+    margin-left: 20px;
+    color:  rgb(6, 76, 180);
+     /*font-weight: bold;*/
+     font-size: 18px !important;
+    padding-top: 0px !important;
+  }
+
+
+footer .p4 #verticle-line p{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  footer #head{
+    margin-left: 0px !important;
+  }
+
+  footer #head h1{
+    text-align: center;
+    margin-top: 60px;  
+    margin-left: 0px; 
+    font-size: 30px;  
+
+  }
+  footer .con{
+    display: grid;
+    margin-left: 0px;
+    /*flex-direction: column; */
+  }
+
+  footer .col-md-3 > p > a{
+    font-size: 16px;
+  }  
+
+  footer .col-md-4 > p > a{
+      font-size: 16px;
+  }    
+
+  footer .p4 #verticle-line {
+      width: 2px;
+      height: 210px;
+      margin-bottom: 20px;
+    }
+
+    footer .p4{
+      text-align: center;
+      justify-content: center;
+    }
+
+  footer .p4 #verticle-line h1{
+      /*margin: 20px;*/
+      color:  rgb(6, 76, 180);
+       font-size: 18px;
+      padding-top: 0px !important;
+    }
+
+
+  footer .p4 #verticle-line p{
+      color: white !important;
+      font-size: 14px;
+      font-weight: 500;
+  }
+
+  footer #head .logo{
+    margin-left: 60px !important;
+    float: center !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: lightblue;
+  }
+
+  footer #head{
+    margin-left: 0px !important;
+  }
+
+  footer #head h1{
+    text-align: center;
+    margin-top: 60px;  
+    margin-left: 0px; 
+    font-size: 30px;  
+
+  }
+  footer .con{
+    display: grid;
+    margin-left: 0px;
+    /*flex-direction: column; */
+  }
+
+  footer .col-md-3 > p > a{
+    font-size: 16px;
+  }  
+
+  footer .col-md-4 > p > a{
+      font-size: 16px;
+  }    
+
+  footer .p3 #verticle-line {
+      width: 2px;
+      height: 210px;
+      margin-bottom: 20px;
+    }
+
+    footer .p4{
+      text-align: center;
+      justify-content: center;
+    }
+
+  footer .p4 #verticle-line h1{
+      /*margin: 20px;*/
+      color:  rgb(6, 76, 180);
+       font-size: 18px;
+      padding-top: 0px !important;
+    }
+
+
+  footer .p4 #verticle-line p{
+      color: white !important;
+      font-size: 14px;
+      font-weight: 500;
+  }
+
+  footer #head .logo{
+    margin-left: 60px !important;
+    float: center !important;
+  }
+}
+
+
+
+    
+
+    
